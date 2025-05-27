@@ -1,0 +1,8 @@
+[submodule "product-review-api"]
+	path = product-review-api
+	url = https://github.com/ribborges/product-review-api.git
+	branch = main
+[submodule "product-review-web"]
+	path = product-review-web
+	url = https://github.com/ribborges/product-review-web.git
+	branch = main
