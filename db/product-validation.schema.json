@@ -1,0 +1,39 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "Products object validation",
+    "required": [
+      "name",
+      "description",
+      "price",
+      "category",
+      "createdAt"
+    ],
+    "properties": {
+      "name": {
+        "bsonType": "string",
+        "description": "Field 'name' must be a string and is required"
+      },
+      "description": {
+        "bsonType": "string",
+        "description": "Field 'description' must be a string and is required"
+      },
+      "price": {
+        "bsonType": "double",
+        "description": "Field 'price' must be a double and is required"
+      },
+      "category": {
+        "bsonType": "string",
+        "description": "Field 'category' must be a double and is required"
+      },
+      "createdAt": {
+        "bsonType": "date",
+        "description": "Field 'createdAt' must be a date and is required"
+      },
+      "updatedAt": {
+        "bsonType": "date",
+        "description": "Field 'updatedAt' must be a date if exists"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "Reviews object validation",
+    "required": [
+      "productId",
+      "author",
+      "rating",
+      "comment",
+      "createdAt"
+    ],
+    "properties": {
+      "productId": {
+        "bsonType": "string",
+        "description": "Field 'productId' must be a string and is required"
+      },
+      "author": {
+        "bsonType": "string",
+        "description": "Field 'author' must be a string and is required"
+      },
+      "rating": {
+        "bsonType": "int",
+        "minimum": 1,
+        "maximum": 5,
+        "description": "Field 'rating' must be a integer from 1 to 5 and is required"
+      },
+      "comment": {
+        "bsonType": "string",
+        "description": "Field 'comment' must be a string and is required"
+      },
+      "createdAt": {
+        "bsonType": "date",
+        "description": "Field 'createdAt' must be a date and is required"
+      },
+      "updatedAt": {
+        "bsonType": "date",
+        "description": "Field 'updatedAt' must be a date if exists"
+      }
+    }
+  }
+}
